@@ -10,9 +10,13 @@
 
 @implementation AppDelegate
 
+@synthesize takenPicture;
+@synthesize filterPicture;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    filterPicture = [[UIImageView alloc] init];
+    takenPicture = [[UIImageView alloc] init];
     return YES;
 }
 							

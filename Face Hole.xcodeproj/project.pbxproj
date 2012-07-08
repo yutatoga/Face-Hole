@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D4C969A15A6FC53001C0B98 /* yui.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8D4C969915A6FC53001C0B98 /* yui.jpg */; };
+		8D4C96A115A70DC9001C0B98 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D4C96A015A70DC9001C0B98 /* MobileCoreServices.framework */; };
+		8D4C96AF15A74E2C001C0B98 /* CustomUIImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C96AD15A74E2C001C0B98 /* CustomUIImagePickerController.m */; };
+		8D4C96B015A74E2C001C0B98 /* CustomUIImagePickerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D4C96AE15A74E2C001C0B98 /* CustomUIImagePickerController.xib */; };
+		8D4C96B715A755AD001C0B98 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D4C96B615A755AD001C0B98 /* AVFoundation.framework */; };
+		8D4C96D815A7F5C8001C0B98 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D4C96D715A7F5C8001C0B98 /* CoreVideo.framework */; };
+		8D4C96DA15A7F752001C0B98 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D4C96D915A7F751001C0B98 /* CoreMedia.framework */; };
+		8D4C96DE15A7F89E001C0B98 /* CustomCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C96DC15A7F89E001C0B98 /* CustomCameraViewController.m */; };
+		8D4C96DF15A7F89E001C0B98 /* CustomCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D4C96DD15A7F89E001C0B98 /* CustomCameraViewController.xib */; };
+		8D4C96EA15A87098001C0B98 /* t_hero.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D4C96E915A87098001C0B98 /* t_hero.png */; };
+		8D4C96EC15A88AEE001C0B98 /* facefole2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D4C96EB15A88AED001C0B98 /* facefole2.png */; };
+		8D4C96EE15A88F7A001C0B98 /* facefole3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D4C96ED15A88F7A001C0B98 /* facefole3.png */; };
+		8D4C96F015A8965A001C0B98 /* faceHole.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D4C96EF15A8965A001C0B98 /* faceHole.png */; };
 		8D89327E15A6F34700D3102A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D89327D15A6F34700D3102A /* UIKit.framework */; };
 		8D89328015A6F34700D3102A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D89327F15A6F34700D3102A /* Foundation.framework */; };
 		8D89328215A6F34700D3102A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D89328115A6F34700D3102A /* CoreGraphics.framework */; };
@@ -15,9 +28,31 @@
 		8D89328E15A6F34700D3102A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D89328D15A6F34700D3102A /* AppDelegate.m */; };
 		8D89329115A6F34700D3102A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D89328F15A6F34700D3102A /* MainStoryboard.storyboard */; };
 		8D89329415A6F34700D3102A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D89329315A6F34700D3102A /* ViewController.m */; };
+		8DBA2D4C15A9541400D8AD71 /* Icon_Flip_Camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DBA2D4B15A9541400D8AD71 /* Icon_Flip_Camera.png */; };
+		8DBA2D4F15A9548500D8AD71 /* Icon_Flip_Camera2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DBA2D4E15A9548500D8AD71 /* Icon_Flip_Camera2.png */; };
+		8DBA2D5C15A9665800D8AD71 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DBA2D5B15A9665800D8AD71 /* AudioToolbox.framework */; };
+		8DBA2D5E15A9671400D8AD71 /* camera.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8DBA2D5D15A9671400D8AD71 /* camera.wav */; };
+		8DBA2D6015A96A2800D8AD71 /* camera2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8DBA2D5F15A96A2800D8AD71 /* camera2.wav */; };
+		8DBA2D6515A96AE500D8AD71 /* camera3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8DBA2D6415A96AE500D8AD71 /* camera3.wav */; };
+		8DBA2D6715A96B6400D8AD71 /* Pop.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 8DBA2D6615A96B6400D8AD71 /* Pop.aiff */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D4C969915A6FC53001C0B98 /* yui.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yui.jpg; sourceTree = "<group>"; };
+		8D4C96A015A70DC9001C0B98 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		8D4C96AC15A74E2C001C0B98 /* CustomUIImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUIImagePickerController.h; sourceTree = "<group>"; };
+		8D4C96AD15A74E2C001C0B98 /* CustomUIImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomUIImagePickerController.m; sourceTree = "<group>"; };
+		8D4C96AE15A74E2C001C0B98 /* CustomUIImagePickerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomUIImagePickerController.xib; sourceTree = "<group>"; };
+		8D4C96B615A755AD001C0B98 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8D4C96D715A7F5C8001C0B98 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		8D4C96D915A7F751001C0B98 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		8D4C96DB15A7F89E001C0B98 /* CustomCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCameraViewController.h; sourceTree = "<group>"; };
+		8D4C96DC15A7F89E001C0B98 /* CustomCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCameraViewController.m; sourceTree = "<group>"; };
+		8D4C96DD15A7F89E001C0B98 /* CustomCameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCameraViewController.xib; sourceTree = "<group>"; };
+		8D4C96E915A87098001C0B98 /* t_hero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = t_hero.png; sourceTree = "<group>"; };
+		8D4C96EB15A88AED001C0B98 /* facefole2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facefole2.png; sourceTree = "<group>"; };
+		8D4C96ED15A88F7A001C0B98 /* facefole3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facefole3.png; sourceTree = "<group>"; };
+		8D4C96EF15A8965A001C0B98 /* faceHole.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = faceHole.png; sourceTree = "<group>"; };
 		8D89327915A6F34700D3102A /* Face Hole.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Face Hole.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D89327D15A6F34700D3102A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8D89327F15A6F34700D3102A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -31,6 +66,13 @@
 		8D89329015A6F34700D3102A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		8D89329215A6F34700D3102A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		8D89329315A6F34700D3102A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8DBA2D4B15A9541400D8AD71 /* Icon_Flip_Camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_Flip_Camera.png; sourceTree = "<group>"; };
+		8DBA2D4E15A9548500D8AD71 /* Icon_Flip_Camera2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_Flip_Camera2.png; sourceTree = "<group>"; };
+		8DBA2D5B15A9665800D8AD71 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		8DBA2D5D15A9671400D8AD71 /* camera.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = camera.wav; sourceTree = "<group>"; };
+		8DBA2D5F15A96A2800D8AD71 /* camera2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = camera2.wav; sourceTree = "<group>"; };
+		8DBA2D6415A96AE500D8AD71 /* camera3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = camera3.wav; sourceTree = "<group>"; };
+		8DBA2D6615A96B6400D8AD71 /* Pop.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Pop.aiff; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +80,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DBA2D5C15A9665800D8AD71 /* AudioToolbox.framework in Frameworks */,
+				8D4C96DA15A7F752001C0B98 /* CoreMedia.framework in Frameworks */,
+				8D4C96D815A7F5C8001C0B98 /* CoreVideo.framework in Frameworks */,
+				8D4C96B715A755AD001C0B98 /* AVFoundation.framework in Frameworks */,
+				8D4C96A115A70DC9001C0B98 /* MobileCoreServices.framework in Frameworks */,
 				8D89327E15A6F34700D3102A /* UIKit.framework in Frameworks */,
 				8D89328015A6F34700D3102A /* Foundation.framework in Frameworks */,
 				8D89328215A6F34700D3102A /* CoreGraphics.framework in Frameworks */,
@@ -47,9 +94,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D4C96E415A7FE69001C0B98 /* unused */ = {
+			isa = PBXGroup;
+			children = (
+				8D4C96AC15A74E2C001C0B98 /* CustomUIImagePickerController.h */,
+				8D4C96AD15A74E2C001C0B98 /* CustomUIImagePickerController.m */,
+				8D4C96AE15A74E2C001C0B98 /* CustomUIImagePickerController.xib */,
+			);
+			name = unused;
+			sourceTree = "<group>";
+		};
 		8D89326E15A6F34700D3102A = {
 			isa = PBXGroup;
 			children = (
+				8D4C96ED15A88F7A001C0B98 /* facefole3.png */,
+				8D4C96EB15A88AED001C0B98 /* facefole2.png */,
 				8D89328315A6F34700D3102A /* Face Hole */,
 				8D89327C15A6F34700D3102A /* Frameworks */,
 				8D89327A15A6F34700D3102A /* Products */,
@@ -67,6 +126,11 @@
 		8D89327C15A6F34700D3102A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8DBA2D5B15A9665800D8AD71 /* AudioToolbox.framework */,
+				8D4C96D915A7F751001C0B98 /* CoreMedia.framework */,
+				8D4C96D715A7F5C8001C0B98 /* CoreVideo.framework */,
+				8D4C96B615A755AD001C0B98 /* AVFoundation.framework */,
+				8D4C96A015A70DC9001C0B98 /* MobileCoreServices.framework */,
 				8D89327D15A6F34700D3102A /* UIKit.framework */,
 				8D89327F15A6F34700D3102A /* Foundation.framework */,
 				8D89328115A6F34700D3102A /* CoreGraphics.framework */,
@@ -77,12 +141,16 @@
 		8D89328315A6F34700D3102A /* Face Hole */ = {
 			isa = PBXGroup;
 			children = (
+				8D4C96E415A7FE69001C0B98 /* unused */,
 				8D89328C15A6F34700D3102A /* AppDelegate.h */,
 				8D89328D15A6F34700D3102A /* AppDelegate.m */,
 				8D89328F15A6F34700D3102A /* MainStoryboard.storyboard */,
 				8D89329215A6F34700D3102A /* ViewController.h */,
 				8D89329315A6F34700D3102A /* ViewController.m */,
 				8D89328415A6F34700D3102A /* Supporting Files */,
+				8D4C96DB15A7F89E001C0B98 /* CustomCameraViewController.h */,
+				8D4C96DC15A7F89E001C0B98 /* CustomCameraViewController.m */,
+				8D4C96DD15A7F89E001C0B98 /* CustomCameraViewController.xib */,
 			);
 			path = "Face Hole";
 			sourceTree = "<group>";
@@ -90,6 +158,15 @@
 		8D89328415A6F34700D3102A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8DBA2D6615A96B6400D8AD71 /* Pop.aiff */,
+				8DBA2D6415A96AE500D8AD71 /* camera3.wav */,
+				8DBA2D5F15A96A2800D8AD71 /* camera2.wav */,
+				8DBA2D5D15A9671400D8AD71 /* camera.wav */,
+				8DBA2D4E15A9548500D8AD71 /* Icon_Flip_Camera2.png */,
+				8DBA2D4B15A9541400D8AD71 /* Icon_Flip_Camera.png */,
+				8D4C96EF15A8965A001C0B98 /* faceHole.png */,
+				8D4C96E915A87098001C0B98 /* t_hero.png */,
+				8D4C969915A6FC53001C0B98 /* yui.jpg */,
 				8D89328515A6F34700D3102A /* Face Hole-Info.plist */,
 				8D89328615A6F34700D3102A /* InfoPlist.strings */,
 				8D89328915A6F34700D3102A /* main.m */,
@@ -151,6 +228,19 @@
 			files = (
 				8D89328815A6F34700D3102A /* InfoPlist.strings in Resources */,
 				8D89329115A6F34700D3102A /* MainStoryboard.storyboard in Resources */,
+				8D4C969A15A6FC53001C0B98 /* yui.jpg in Resources */,
+				8D4C96B015A74E2C001C0B98 /* CustomUIImagePickerController.xib in Resources */,
+				8D4C96DF15A7F89E001C0B98 /* CustomCameraViewController.xib in Resources */,
+				8D4C96EA15A87098001C0B98 /* t_hero.png in Resources */,
+				8D4C96EC15A88AEE001C0B98 /* facefole2.png in Resources */,
+				8D4C96EE15A88F7A001C0B98 /* facefole3.png in Resources */,
+				8D4C96F015A8965A001C0B98 /* faceHole.png in Resources */,
+				8DBA2D4C15A9541400D8AD71 /* Icon_Flip_Camera.png in Resources */,
+				8DBA2D4F15A9548500D8AD71 /* Icon_Flip_Camera2.png in Resources */,
+				8DBA2D5E15A9671400D8AD71 /* camera.wav in Resources */,
+				8DBA2D6015A96A2800D8AD71 /* camera2.wav in Resources */,
+				8DBA2D6515A96AE500D8AD71 /* camera3.wav in Resources */,
+				8DBA2D6715A96B6400D8AD71 /* Pop.aiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +254,8 @@
 				8D89328A15A6F34700D3102A /* main.m in Sources */,
 				8D89328E15A6F34700D3102A /* AppDelegate.m in Sources */,
 				8D89329415A6F34700D3102A /* ViewController.m in Sources */,
+				8D4C96AF15A74E2C001C0B98 /* CustomUIImagePickerController.m in Sources */,
+				8D4C96DE15A7F89E001C0B98 /* CustomCameraViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +333,7 @@
 				GCC_PREFIX_HEADER = "Face Hole/Face Hole-Prefix.pch";
 				INFOPLIST_FILE = "Face Hole/Face Hole-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -252,6 +345,7 @@
 				GCC_PREFIX_HEADER = "Face Hole/Face Hole-Prefix.pch";
 				INFOPLIST_FILE = "Face Hole/Face Hole-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -275,6 +369,7 @@
 				8D89329915A6F34700D3102A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>{
+    UIImageView *takenPicture;
+    UIImageView *filterPicture;
+}
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) UIImageView *takenPicture;
+@property (strong, nonatomic) UIImageView *filterPicture;
 
 @end
