@@ -109,8 +109,11 @@
     
     
     displayImage = [self rotateImage:displayImage imageOrientation:3];//OtO added
-    
-    // 画像を画面に表示
+    //内側カメラの時だけ左右反転
+    if (curerntPositioin == AVCaptureDevicePositionFront) {
+        displayImage = [UIImage imageWithCGImage:displayImage.CGImage scale:displayImage.scale orientation:UIImageOrientationUpMirrored];
+    }
+    //カメラからの画像を画面に表示
     [imageViewBase performSelectorOnMainThread:@selector(setImage:) withObject:displayImage waitUntilDone:TRUE];// (2)
 }
 // 撮影画面に表示されている画像をアルバムに保存

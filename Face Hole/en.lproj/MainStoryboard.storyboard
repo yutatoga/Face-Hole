@@ -61,8 +61,8 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Face Hole" id="FJK-Z7-aQU">
-                        <barButtonItem key="leftBarButtonItem" title="Item" style="plain" id="pVL-Au-e1A">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" hasAttributedTitle="NO" lineBreakMode="middleTruncation" id="txK-vl-IEa">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="pVL-Au-e1A">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" hasAttributedTitle="NO" lineBreakMode="middleTruncation" id="txK-vl-IEa">
                                 <rect key="frame" x="5" y="5" width="34" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -87,6 +87,7 @@
                     <connections>
                         <outlet property="cameraButton" destination="Ftd-Hy-B6k" id="9nQ-2R-bK4"/>
                         <outlet property="firstGuideLabel" destination="Gig-TS-djj" id="lfL-3b-MyO"/>
+                        <outlet property="imageButton" destination="txK-vl-IEa" id="fqP-fL-Jty"/>
                         <outlet property="imageView" destination="7Fc-8J-lYL" id="yUR-Gm-2bG"/>
                         <outlet property="imageViewBase" destination="9LG-5I-vSf" id="HPf-7B-tyW"/>
                         <outlet property="shareButton" destination="YU2-nk-meX" id="zkg-2G-XM5"/>
@@ -130,6 +131,7 @@
                 <relationship kind="action" name="undoModeButtonTouched"/>
                 <relationship kind="outlet" name="cameraButton" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="firstGuideLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="imageButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="imageViewBase" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="shareButton" candidateClass="UIBarButtonItem"/>

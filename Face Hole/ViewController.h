@@ -25,6 +25,7 @@
     IBOutlet UIBarButtonItem *cameraButton;
     IBOutlet UIBarButtonItem *undoButton;
     IBOutlet UIBarButtonItem *shareButton;
+    IBOutlet UIButton *imageButton;
     IBOutlet UIToolbar *toolbar;
     BOOL touchOnToolbar;
     IBOutlet UILabel *firstGuideLabel;

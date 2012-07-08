@@ -43,7 +43,6 @@
     cameraButton.enabled = false;
     undoButton.enabled = false;
     NSLog(@"view x:%f y:%f", self.view.frame.size.width, self.view.frame.size.height);
-    //toolbar.hidden = true;
     touchOnToolbar = true;
     toolbar.userInteractionEnabled = false;
 }
@@ -144,7 +143,6 @@
             shareButton.enabled = true;
             cameraButton.enabled = true;
             undoButton.enabled = true;
-            toolbar.hidden =false;
         }
         UITouch *touch = [touches anyObject];
         touchPoint = [touch locationInView:imageView];
@@ -315,23 +313,34 @@
                                    UIImagePickerControllerEditedImage];
         originalImage = (UIImage *) [info objectForKey:
                                      UIImagePickerControllerOriginalImage];
+        NSLog(@"picker.sourceType:%d",picker.sourceType);
         if (editedImage) {
             imageToSave = editedImage;
             //pictImageView.image = editedImage;//problem is here
             //update special image
-            NSLog(@"camera:%d", picker.cameraDevice);
-            if (picker.cameraDevice) {
-                pickedPhoto = [UIImage imageWithCGImage:pickedPhoto.CGImage scale:pickedPhoto.scale orientation:UIImageOrientationLeftMirrored];
+            if (picker.sourceType == UIImagePickerControllerSourceTypeCamera) {
+                NSLog(@"camera:%d", picker.cameraDevice);
+                if (picker.cameraDevice) {
+                    pickedPhoto = [UIImage imageWithCGImage:pickedPhoto.CGImage scale:pickedPhoto.scale orientation:UIImageOrientationLeftMirrored];
+                }
             }
             imageView.image = pickedPhoto;
         } else {
             imageToSave = originalImage;
             //pictImageView.image = originalImage;//problem is here
             //update special image
-            NSLog(@"camera:%d", picker.cameraDevice);
-            if (picker.cameraDevice) {
-                pickedPhoto = [UIImage imageWithCGImage:pickedPhoto.CGImage scale:pickedPhoto.scale orientation:UIImageOrientationLeftMirrored];
-            }
+            
+            if (picker.sourceType == UIImagePickerControllerSourceTypeCamera) {
+                NSLog(@"camera:%d", picker.cameraDevice);
+                if (picker.cameraDevice) {
+                    pickedPhoto = [UIImage imageWithCGImage:pickedPhoto.CGImage scale:pickedPhoto.scale orientation:UIImageOrientationLeftMirrored];
+                    
+                }
+            }            
+             
+            
+            
+            
             imageView.image = pickedPhoto;
         }
         // （オリジナルまたは編集後の）新規画像を「カメラロール(Camera Roll)」に保存する
@@ -347,6 +356,17 @@
                                                  moviePath, nil, nil, nil);
         }
     }
+    NSLog(@"change image");
+    [imageButton setBackgroundImage:pickedPhoto forState:UIControlStateNormal];
+    [self.circleArray removeAllObjects];
+    virgin = true;
+    cameraButton.enabled = false;
+    undoButton.enabled = false;
+    shareButton.enabled = false;
+    firstGuideLabel.hidden = false;
+    AppDelegate *myAppDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
+    myAppDelegate.takenPicture.image = nil;
+    imageViewBase.image = [UIImage imageNamed:@"faceHole.png"];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (UIImage *)mirrorImage:(UIImage *)img{
@@ -457,10 +477,52 @@
              otherButtonTitles:@"Photo Library", @"Camera", @"Saved Photos", nil];
     
     // アクションシートを表示する
-    [sheet showInView:self.view];
+    [sheet showFromToolbar:toolbar];
     UIImagePickerControllerSourceType   sourceType = 0;
     sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
 }
 
+- (void)actionSheet:(UIActionSheet*)actionSheet
+clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSLog(@"actionSheet clicked");
+    // ボタンインデックスをチェックする
+    if (buttonIndex >= 3) {
+        NSLog(@"action cancel");
+        return;
+    }
+    
+    // ソースタイプを決定する
+    UIImagePickerControllerSourceType   sourceType = 0;
+    switch (buttonIndex) {
+        case 0: {
+            sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+            break;
+        }
+        case 1: {
+            sourceType = UIImagePickerControllerSourceTypeCamera;
+            break;
+        }
+        case 2: {
+            sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+            break;
+        }
+    }
+    
+    // 使用可能かどうかチェックする
+    if (![UIImagePickerController isSourceTypeAvailable:sourceType]) {
+        return;
+    }
+    
+    // イメージピッカーを作る
+    UIImagePickerController*    imagePicker;
+    imagePicker = [[UIImagePickerController alloc] init];
+    imagePicker.sourceType = sourceType;
+    imagePicker.allowsEditing = NO;//please customize
+    imagePicker.delegate = self;
+    
+    // イメージピッカーを表示する
+    [self presentViewController:imagePicker animated:YES completion:nil];
+}
 
 @end
